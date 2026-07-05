@@ -89,12 +89,10 @@ if 'current_page' not in st.session_state:
 
 # Login Page
 if not st.session_state.logged_in:
-    
-    
     with st.container():
         col1, col2, col3 = st.columns([1, 2, 1])
         
-      with col2:
+        with col2:
             st.title("EHS Management System")
 
             if os.path.exists("logo1.jpg"):
