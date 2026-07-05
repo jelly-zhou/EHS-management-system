@@ -96,8 +96,9 @@ if not st.session_state.logged_in:
         
         with col2:
             st.title("EHS Management System")
-            st.image("logo1.jpg", width=9000)
-            st.subheader("Please Login")
+         if os.path.exists("logo1.jpg"):
+             st.image("logo1.jpg", width=300)
+             st.subheader("Please Login")
             
             with st.form("login_form"):
                 username = st.text_input("Username")
