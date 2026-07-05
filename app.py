@@ -94,12 +94,11 @@ if not st.session_state.logged_in:
     with st.container():
         col1, col2, col3 = st.columns([1, 2, 1])
         
-        with col2:
+       with col2:
     st.title("EHS Management System")
 
     if os.path.exists("logo1.jpg"):
         st.image("logo1.jpg", width=300)
-
     st.subheader("Please Login")
             
             with st.form("login_form"):
